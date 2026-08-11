@@ -1,0 +1,12 @@
+Project Rules
+
+1. Every project must have a Project Manager.
+2. Every task should have a priority (High, Medium, Low).
+3. High priority tasks should be completed first.
+4. Project status must be updated every day.
+5. Overdue tasks should be reviewed immediately.
+6. AI recommendations should be reviewed before implementation.
+7. Team members should update task progress regularly.
+8. Deadlines should be monitored daily.
+9. Completed tasks should be marked immediately.
+10. Dashboard analytics should be checked before project meetings.

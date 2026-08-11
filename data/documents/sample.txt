@@ -1,0 +1,9 @@
+Autonomous AI Project Manager
+
+This project uses:
+FastAPI
+LangGraph
+Groq
+PostgreSQL
+RAG
+AI Agents
