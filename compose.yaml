@@ -1,0 +1,27 @@
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: autonomous-api
+    env_file:
+      - .env
+    environment:
+      DATABASE_HOST: host.docker.internal
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    container_name: autonomous-dashboard
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    restart: unless-stopped
