@@ -10,6 +10,7 @@ class ProjectService:
 
         new_project = Project(
             project_name=project.project_name,
+            owner_name=project.owner_name,
             description=project.description,
             start_date=project.start_date,
             end_date=project.end_date,
@@ -40,6 +41,7 @@ class ProjectService:
             return None
 
         db_project.project_name = project.project_name
+        db_project.owner_name = project.owner_name
         db_project.description = project.description
         db_project.start_date = project.start_date
         db_project.end_date = project.end_date
